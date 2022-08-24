@@ -7,7 +7,7 @@ import Nav from '../../components/Nav/Nav'
 const PrincipalPage = () => {
 
     return (
-        <div className={`App ${theme}`}>
+        <div className='principal-container'>
             <Nav/>
 
             <CardsMain/>
