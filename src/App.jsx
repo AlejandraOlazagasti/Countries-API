@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
 import './App.css'
+import { Routes, Route, HashRouter } from 'react-router-dom'
+import PrincipalPage from './pages/PrincipalPage/PrincipalPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-     
-    </div>
+      <Routes>
+        <Route path='/' element={<PrincipalPage />} />
+      </Routes>
   )
 }
 
