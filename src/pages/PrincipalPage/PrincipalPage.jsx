@@ -10,7 +10,7 @@ const PrincipalPage = () => {
   
 
     return (
-        <div>
+        <div className='principal-container'>
             <Nav/>
 
             <CardsMain/>
