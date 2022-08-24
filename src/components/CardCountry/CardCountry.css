@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;  
-     color: black;
+     color: var(--letters);
     padding-top: 120px;
 }
 
@@ -18,7 +18,10 @@
 .card {
     width: 260px;
     height: 310px;
-background-color: white;
+background-color: var(--second-color);
+border-radius: 8px;
+border: 2px solid var(--letters);
+overflow: hidden;
 
 }
 
