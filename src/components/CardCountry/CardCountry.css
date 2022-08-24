@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;  
+     color: black;
+}
+
+
+.card {
+    width: 260px;
+    height: 310px;
+background-color: white;
+
+}
+
+.card h2 {
+    font-size: 1.3em;
+    text-align: start;
+    padding: 10px 15px;
+}
+
+.card__description {
+    font-size: 1em;
+   text-align: start;
+    padding: 10px 15px;
+}
+
+
+.card__img img{
+    width: 100%;
+object-fit: cover;
+    height: 150px;
+}
+
