@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.css'
-import { Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import PrincipalPage from './pages/PrincipalPage/PrincipalPage'
 
 function App() {
 
   return (
-      <Routes>
-        <Route path='/' element={<PrincipalPage />} />
-      </Routes>
+    <Routes>
+      <Route path='/' element={<PrincipalPage />} />
+    </Routes>
   )
 }
 
