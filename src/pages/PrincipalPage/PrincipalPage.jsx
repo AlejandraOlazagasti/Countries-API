@@ -7,7 +7,7 @@ const PrincipalPage = () => {
     return (
         <div>
             <Nav/>
-            <ReactSwitch/>
+            {/* <ReactSwitch/> */}
             <CardCountry/>
             <h1>PrincipalPage</h1>
         </div>
