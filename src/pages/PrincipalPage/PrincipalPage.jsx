@@ -5,10 +5,7 @@ import Search from '../../components/Search/Search'
 import Filter from '../../components/Filter/Filter'
 import '../PrincipalPage/PrincipalPage.css'
 
-
 const PrincipalPage = () => {
-
-  
 
     return (
         <div className='principal-container'>
