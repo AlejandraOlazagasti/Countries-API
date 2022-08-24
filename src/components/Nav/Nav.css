@@ -13,24 +13,27 @@
     background-color: var(--second-color);
     color: var(--letters)
 }
-.Nav__dark{
-    display: flex;
-    gap: 10px;
-    font-size: 10px;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-}
 
-.Nav__dark:hover{
+.Nav__btn:hover{
     background-color: var(--alice-blue);
     color: black ;
 }
+
 .Nav__btn{
-    background-color: var(--second-color);
+    background-color: transparent;
     font-size: 15px;
     border: none;
     color: var(--letters);
-    
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Nav__btn:hover{
+    color: black;
 }

@@ -18,8 +18,7 @@ const Nav = ({theme, setTheme}) => {
     <section className='Nav'>
       <h1 className='Nav__title'>Where in the world?</h1>
       <div onClick={handleTheme} className='Nav__dark'>
-        <button className='Nav__btn'><i className='bx bx-moon'></i></button>
-        <h2 className='Nav__dark__title'>Dark Mode</h2>
+        <button className='Nav__btn'><i className='bx bx-moon'/> <span>Dark Mode</span></button>
       </div>
     </section>
   )
