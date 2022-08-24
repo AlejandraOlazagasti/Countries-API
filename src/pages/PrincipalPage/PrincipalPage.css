@@ -1,4 +1,11 @@
 .principal-container{
   position: relative;
-
+}
+.principal__body{
+  padding-top: 120px;
+}
+.principal__inputs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
