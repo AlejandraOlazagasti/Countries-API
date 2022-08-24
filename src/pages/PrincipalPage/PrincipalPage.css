@@ -10,3 +10,10 @@
   align-items: center;
   margin: 15px;
 }
+
+@media (max-width:680px) {
+  .principal__inputs{
+    flex-direction: column;
+    gap: 15px;
+  }
+}
