@@ -12,7 +12,9 @@ const PrincipalPage = () => {
     return (
         <div>
             <Nav/>
+
             <CardsMain/>
+
             <h1>PrincipalPage</h1>
         </div>
     )
