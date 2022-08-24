@@ -4,13 +4,10 @@ import CardCountry from '../../components/CardCountry/CardCountry'
 import CardsMain from '../../components/CardCountry/CardsMain'
 import Nav from '../../components/Nav/Nav'
 
-
 const PrincipalPage = () => {
 
-  
-
     return (
-        <div>
+        <div className={`App ${theme}`}>
             <Nav/>
 
             <CardsMain/>
