@@ -1,8 +1,11 @@
 import React from 'react'
+import Theme from '../Theme/Theme'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <section className='nav_container'>
+        <Theme/>
+    </section>
   )
 }
 
