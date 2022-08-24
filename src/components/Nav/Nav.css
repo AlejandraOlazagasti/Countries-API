@@ -1,0 +1,20 @@
+/*  */
+.Nav{
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+}
+.Nav__dark{
+   display: flex;
+   gap: 10px;
+   font-size: 10px;
+   align-items: center;
+}
+.Nav__btn{
+    background-color: white;
+    font-size: 15px;
+    border: none;
+}
