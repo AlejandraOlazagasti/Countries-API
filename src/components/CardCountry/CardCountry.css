@@ -10,14 +10,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;  
-     color: black;
+    color: black;
+    padding-top: 120px;
 }
 
 
 .card {
     width: 260px;
     height: 310px;
-background-color: white;
+    background-color: white;
 
 }
 
