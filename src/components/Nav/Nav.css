@@ -12,6 +12,7 @@
     z-index: 100;
     background-color: var(--bg);
     color: var(--letters);
+    text-align: center;
 }
 
 .Nav__btn:hover{
@@ -37,4 +38,14 @@
 
 .Nav__btn:hover{
     color: black;
+}
+
+@media (max-width: 600px) {
+    .Nav__btn > span{
+        display: none;
+    }
+
+    .Nav{
+        font-size: 14px;
+    }
 }
