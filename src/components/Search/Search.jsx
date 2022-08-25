@@ -1,32 +1,31 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import useFetch from '../../hooks/useFetch'
 import '../Search/Search.css'
 
 const Search = () => {
 
-  const [search, setSearch] = useState('')
+  const countriesInputRef = useRef()
 
-  useEffect(() => {
-    let searchValue
-    if (search === ''){
-      countries
-    } else {
-      countries = search
-    }
-    const countries = useFetch(`https://restcountries.com/v2/name/${searchValue}`)
-
-  }, [search])
+  const countries = useFetch(`https://restcountries.com/v2/all`)
+  // const countries = useFetch(`https://restcountries.com/v2/name/${searchValue}`)
   
 
+  const searchCountries = () => {
+    const searchValue = countriesInputRef.current.value
+
+    if (searchValue.thin()) {
+      countries
+    }
+  }
+
   return (
-    <div className='search'>
-      <div className='search__input'>
-        <i class='bx bx-search-alt-2'></i>
+    <div className='search '>
+      <div className='search__input input'>
+        <i className='bx bx-search-alt-2'></i>
         <input 
           type='text'
           placeholder='Search for Country'
-          ref={countriesInputRef}
+          id='search'
           onChange={searchCountries}
         />
       </div>

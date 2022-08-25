@@ -1,10 +1,8 @@
 import React from 'react'
-import useFetch from '../../hooks/useFetch'
 import CardCountry from './CardCountry'
 
-const CardsMain = () => {
-
-    const countries = useFetch(`https://restcountries.com/v2/all`)
+const CardsMain = ({countries}) => {
+   
 
   return (
       <div className='card_container'>
@@ -12,7 +10,7 @@ const CardsMain = () => {
 {
     countries?.map(country => (
         <CardCountry 
-        key={country.name}
+        key={country.name.official}
         country={country}
         />
 
