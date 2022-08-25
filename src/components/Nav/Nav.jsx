@@ -1,27 +1,32 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Nav.css'
 
 
-const Nav = ({theme, setTheme}) => {
+const Nav = ({ theme, setTheme }) => {
 
 
   const handleTheme = () => {
-    if(theme === 'ligth'){
+    if (theme === 'ligth') {
       setTheme('dark')
-    }else{
+    } else {
       setTheme('ligth')
     }
   }
 
+  const backPageRedirect = useNavigate();
+
+  const handleBackPage = () => {
+    backPageRedirect(-1)
+  }
+
+
   return (
     <section className='Nav'>
-      <Link to={'/'}>
-        <button className=''>Back to Start</button>
-      </Link>
+      <button onClick={handleBackPage} className='Nav__btn'><i class='bx bx-arrow-back'></i><span>Go Back</span></button>
       <h1 className='Nav__title'>Where in the world?</h1>
       <div onClick={handleTheme} className='Nav__dark'>
-        <button className='Nav__btn'><i className='bx bx-moon'/> <span>Dark Mode</span></button>
+        <button className='Nav__btn'><i className='bx bx-moon' /> <span>Dark Mode</span></button>
       </div>
     </section>
   )
