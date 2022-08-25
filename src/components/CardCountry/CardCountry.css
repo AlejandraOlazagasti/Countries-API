@@ -10,20 +10,19 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;  
-
-     color: var(--letters);
+    color: var(--letters);
     padding-top: 40px;
-
 }
 
 
 .card {
     width: 260px;
     height: 310px;
-background-color: var(--second-color);
-border-radius: 8px;
-border: 2px solid var(--letters);
-overflow: hidden;
+    background-color: var(--second-color);
+    border-radius: 8px;
+  border: 2px solid var(--letters);
+  overflow: hidden;
+
 
 }
 
