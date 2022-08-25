@@ -13,3 +13,17 @@
   --oxford-blue: #9ad4d6ff;
 
 }
+
+.principal__filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 120px 15px 25px 15px;
+}
+
+@media (max-width:650px) {
+  .principal__filters{
+    flex-direction: column;
+    gap: 15px;
+  }
+}

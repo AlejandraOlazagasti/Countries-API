@@ -8,6 +8,7 @@ const CardsMain = () => {
 
   return (
       <div className='card_container'>
+        
 {
     countries?.map(country => (
         <CardCountry 
