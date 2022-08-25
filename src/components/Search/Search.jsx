@@ -19,13 +19,13 @@ const Search = () => {
   }
 
   return (
-    <div className='search'>
-      <div className='search__input'>
-        <i class='bx bx-search-alt-2'></i>
+    <div className='search '>
+      <div className='search__input input'>
+        <i className='bx bx-search-alt-2'></i>
         <input 
           type='text'
           placeholder='Search for Country'
-          ref={countriesInputRef}
+          id='search'
           onChange={searchCountries}
         />
       </div>

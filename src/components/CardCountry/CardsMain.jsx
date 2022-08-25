@@ -6,6 +6,7 @@ const CardsMain = ({countries}) => {
 
   return (
       <div className='card_container'>
+        
 {
     countries?.map(country => (
         <CardCountry 
