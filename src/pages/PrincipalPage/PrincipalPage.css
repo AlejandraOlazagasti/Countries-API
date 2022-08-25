@@ -1,5 +1,6 @@
 .principal-container {
   position: relative;
+
   background-color: var(--bg); 
 }
 
@@ -10,4 +11,5 @@
 
   --alice-blue: #e5eefeff;
   --oxford-blue: #9ad4d6ff;
+
 }
