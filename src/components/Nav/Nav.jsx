@@ -7,7 +7,7 @@ const Nav = ({ theme, setTheme }) => {
 
 
   const handleTheme = () => {
-    if (theme === 'ligth') {
+    if (theme === '' || theme ==='ligth') {
       setTheme('dark')
     } else {
       setTheme('ligth')

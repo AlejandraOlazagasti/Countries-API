@@ -6,7 +6,7 @@ import './PrincipalPage.css'
 
 
 const PrincipalPage = () => {
-    const [theme, setTheme] = useState('light')
+    const [theme, setTheme] = useState('')
 
     return (
 
