@@ -9,7 +9,7 @@ const useFetch = url => {
   axios.get(url)
   .then(res => setResponse(res.data))
   .catch(err => console.log(err))
-  }, [])
+  }, [url])
 
   return response
 
