@@ -10,8 +10,9 @@
     padding: 0 50px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     z-index: 100;
-    background-color: var(--second-color);
-    color: var(--letters)
+    background-color: var(--bg);
+    color: var(--letters);
+    text-align: center;
 }
 
 .Nav__btn:hover{
@@ -32,8 +33,19 @@
     gap: 5px;
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .Nav__btn:hover{
     color: black;
+}
+
+@media (max-width: 600px) {
+    .Nav__btn > span{
+        display: none;
+    }
+
+    .Nav{
+        font-size: 14px;
+    }
 }
