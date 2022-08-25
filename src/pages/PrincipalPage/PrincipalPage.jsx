@@ -1,24 +1,20 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import CardsMain from '../../components/CardCountry/CardsMain'
 import Nav from '../../components/Nav/Nav'
-import Search from '../../components/Search/Search'
-import Filter from '../../components/Filter/Filter'
-import '../PrincipalPage/PrincipalPage.css'
+import './PrincipalPage.css'
+
 
 const PrincipalPage = () => {
+    const [theme, setTheme] = useState('light')
 
     return (
-        <div className='principal-container'>
-            <header>
-                <Nav/>
-            </header>
-            <body className='principal__body'>
-                <div className='principal__inputs'>
-                    <Search/>
-                    <Filter/>
-                </div>
-                <CardsMain/>
-            </body>
+
+        <div className={`principal-container ${theme}`}>
+            <Nav theme={theme} setTheme={setTheme}/>
+            <CardsMain/>
+
+
         </div>
     )
 }

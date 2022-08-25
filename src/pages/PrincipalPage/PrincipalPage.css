@@ -1,19 +1,15 @@
-.principal-container{
+.principal-container {
   position: relative;
-}
-.principal__body{
-  padding-top: 120px;
-}
-.principal__inputs{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px;
+
+  background-color: var(--bg); 
 }
 
-@media (max-width:680px) {
-  .principal__inputs{
-    flex-direction: column;
-    gap: 15px;
-  }
+.principal-container.dark{
+ --bg: #101935;
+  --letters: #f2fdffff;
+  --second-color: #393c60ff;
+
+  --alice-blue: #e5eefeff;
+  --oxford-blue: #9ad4d6ff;
+
 }
