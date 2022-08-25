@@ -10,11 +10,10 @@ const PrincipalPage = () => {
 
     return (
 
+
         <div className={`principal-container ${theme}`}>
             <Nav theme={theme} setTheme={setTheme}/>
             <CardsMain/>
-
-
         </div>
     )
 }
