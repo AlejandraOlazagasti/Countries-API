@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import useFetch from '../../hooks/useFetch'
 import '../Filter/Filter.css'
 
-const Filter = ({ setUrl, regions, regionsList }) => {
+const Filter = ({ setUrl, regionsList }) => {
   const regionRef = useRef()
 
 

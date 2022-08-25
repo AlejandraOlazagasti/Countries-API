@@ -1,20 +1,25 @@
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CardsMain from '../../components/CardCountry/CardsMain'
 import Nav from '../../components/Nav/Nav'
 import './PrincipalPage.css'
 import Filter from '../../components/Filter/Filter'
 import useFetch from '../../hooks/useFetch'
+import axios from 'axios'
 
 
 const PrincipalPage = () => {
     const [theme, setTheme] = useState('')
     const [url, setUrl] = useState(`https://restcountries.com/v3.1/all`)
+    const [regions, setRegions] = useState()
 
     const countries = useFetch(url)
 
-    const regions = useFetch(url)
-
+    useEffect(() => {
+        axios.get(url)
+        .then(res => setRegions(res.data))
+        .catch(err => console.log(err))
+        }, [])
 
     let regionsList = []
 
@@ -23,7 +28,7 @@ const PrincipalPage = () => {
         regionsList.push(country.region)
      }
     })
-    console.log(regionsList)
+
 
     return (
 
