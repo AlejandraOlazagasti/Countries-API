@@ -9,9 +9,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2em; 
+    gap: 2em;  
     color: var(--letters);
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 
