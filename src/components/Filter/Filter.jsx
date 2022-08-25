@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../Filter/Filter.css'
 
 const Filter = () => {
+  const regionRef = useRef()
+
   return (
     <div className='filter'>
-      <select>
+      <select ref={regionRef}>
         <option>All</option>
         <option>Africa</option>
         <option>Americas</option>
